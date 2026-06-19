@@ -41,6 +41,13 @@ main {
     background-color: #000;
     color: #fff;
 }
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 19px;
+}
 
 
 @media (max-width: 500px){
@@ -56,5 +63,8 @@ main {
         width: 80px;
         border-radius: 0px;
         border-radius: 4px;
+    }
+    footer {
+        margin-top: 28px;
     }
 }
