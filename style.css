@@ -13,7 +13,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 40px;
 }
 .game {
     height: 430px;
@@ -44,12 +44,15 @@ main {
 
 
 @media (max-width: 500px){
+    main {
+        gap: 77px;
+    }
     .game {
         height: 300px;
         width: 280px;
     }
     .box {
-        height: 60px;
+        height: 80px;
         width: 80px;
         border-radius: 0px;
         border-radius: 4px;
