@@ -31,7 +31,7 @@ function checkwinner(){
     let pos3 = boxes[pattern[2]].innerText;
     if(pos1 != "" && pos2 != "" && pos3 != ""){
       if(pos1 === pos2 && pos2 === pos3){
-        console.log("winner" , pos1)
+        alert(`WINNER ${pos1}`)
         boxes.forEach((e) => {
           e.disabled = true;
         })
@@ -45,4 +45,3 @@ restartbtn.addEventListener("click" , () => {
     e.disabled = false;
   })
 })
-
