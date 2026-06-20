@@ -1,6 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let restartbtn = document.querySelector("#restartbutton");
 let turn0 = true;
+let output = document.querySelector("#output")
 const winningpattren = [
   [0 , 1 , 2],
   [0 , 3 , 6],
@@ -31,7 +32,7 @@ function checkwinner(){
     let pos3 = boxes[pattern[2]].innerText;
     if(pos1 != "" && pos2 != "" && pos3 != ""){
       if(pos1 === pos2 && pos2 === pos3){
-        alert(`WINNER ${pos1}`)
+        output.innerText = `WINNER , ${pos1}`
         boxes.forEach((e) => {
           e.disabled = true;
         })
@@ -43,5 +44,6 @@ restartbtn.addEventListener("click" , () => {
   boxes.forEach((e) => {
     e.innerText = "";
     e.disabled = false;
+    output.innerText = "";
   })
 })
