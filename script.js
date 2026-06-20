@@ -36,6 +36,9 @@ function checkwinner(){
         boxes.forEach((e) => {
           e.disabled = true;
         })
+      }else if(pos1 !== pos2 && pos1 !== pos3) {
+        output.innerText = "BOTH TIE!"
+       
       }
     }
   }
